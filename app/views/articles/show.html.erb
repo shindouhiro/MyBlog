@@ -1,0 +1,13 @@
+<div id="post_show_content" class="skinny_wrapper wrapper_padding">
+
+  <header>
+    <p class="date"><%= @post.created_at.strftime("%Y-%m-%d") %></p>
+    <h2><%= @post.title %></h2>
+    <hr>
+  </header>
+
+  <div id="content">
+    <%= markdown(@post.content) %>
+  </div>
+
+</div>

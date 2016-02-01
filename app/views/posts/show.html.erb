@@ -1,0 +1,10 @@
+<div class="center">
+  <h1>Articles Show</h1>
+    <%= @post.title %>
+    <br />
+    <%= markdown(@post.content) %>
+    <br />
+    <br >
+  <%= link_to 'edit', edit_post_path(@post), class: "btn btn-info" %>
+  <%= link_to 'destroy', post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger"  %>
+</div>
