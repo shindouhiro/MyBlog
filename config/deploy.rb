@@ -12,7 +12,7 @@ require 'mina/git'
 
 set :domain, 'shindou@120.25.90.139'
 set :deploy_to, '/var/www/ruby_sample'
-set :repository, 'git://...'
+set :repository, 'https://github.com/shindouhiro/MyBlog.git'
 set :branch, 'master'
 
 # For system-wide RVM install.
